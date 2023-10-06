@@ -1,12 +1,15 @@
 {
     "$schema": "https://raw.githubusercontent.com/sakheli/docs/main/petstore.json",
+    "api": {
+        "baseUrl": "https://mintlify.com/beqa",
+        "auth": {
+            "method": "bearer"
+        }
+    },
     "name": "Starter Kit",
     "logo": {
         "dark": "/logo/2.webp",
         "light": "/logo/light.svg"
-    },
-    "api": {
-        "baseUrl": "https://petstore.swagger.io/v2"
     },
     "favicon": "/favicon.png",
     "colors": {
@@ -70,16 +73,6 @@
             ]
         },
         {
-            "group": "Essentials",
-            "pages": [
-                "essentials/markdown",
-                "essentials/code",
-                "essentials/images",
-                "essentials/settings",
-                "essentials/navigation"
-            ]
-        },
-        {
             "group": "API Documentation",
             "pages": [
                 "api-reference/authentication"
@@ -88,11 +81,8 @@
         {
             "group": "Endpoint Examples",
             "pages": [
-                "api-reference/endpoint/get",
-                "api-reference/endpoint/create",
-                "api-reference/endpoint/update",
-                "api-reference/endpoint/delete",
-                "api-reference/endpoint/deletes-a-pet"
+                "api-reference/endpoint/deletes-a-pet",
+                "api-reference/endpoint/finds-pets-by-status"
             ]
         }
     ],
